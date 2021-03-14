@@ -36,7 +36,7 @@ type (
 // New returns an instance to the database.
 func New(ctx context.Context, config *Configuration) (*Database, error) {
 	dbConfig := fmt.Sprintf(
-		"host=%s port=%d user=%s password='%s' dbname=%s search_path=%s sslmode=require",
+		"host=%s port=%d user=%s password='%s' dbname=%s search_path=%s sslmode=disable",
 		config.Host,
 		config.Port,
 		config.User,
